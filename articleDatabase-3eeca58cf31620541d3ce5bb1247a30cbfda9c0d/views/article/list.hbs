@@ -1,0 +1,28 @@
+<h3><a class="btn btn-secondary" href="/article"><i class="fa fa-plus"></i> Create New</a> Article List</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Year</th>
+             <th>DOI</th>
+             <th>Ratings</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+        <tr>
+            <td>{{this.title}}</td>
+            <td>{{this.description}}</td>
+            <td>{{this.year}}</td>
+            <td>{{this.doi}}</td>
+            <td>{{this.rating}}</td>
+            <td>
+                <a href="/article/{{this._id}}"><i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+                <a href="/article/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"><i class="fa fa-trash fa-lg" aria-hidden="true"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
