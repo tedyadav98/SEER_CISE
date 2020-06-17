@@ -7,6 +7,7 @@ The article database is a database used to manage and store software engineering
 * Head to the terminal
 * Type "nodemon start"
 * Go to the localhost in the web browser
+* By typing http://localhost:3000/article
 ## MVC Architecture
 * All of the code follows the MVC format.
 * Package.json contains the configuration files and dependencies for the project.
