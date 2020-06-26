@@ -8,6 +8,11 @@ The article database is a database used to manage and store software engineering
 * Type "nodemon start"
 * Go to the localhost in the web browser
 * By typing http://localhost:3000/article
+## Steps to set up mongodb compass
+* Download mongodb compass comunity version
+* Have a connection made to the localhost instead of the web server.
+* Create a new database with the name 'ArticleDB'
+* Create a new table named 'articles' in 'ArticleDB'
 ## MVC Architecture
 * All of the code follows the MVC format.
 * Package.json contains the configuration files and dependencies for the project.
